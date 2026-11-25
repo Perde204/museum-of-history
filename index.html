@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Digital Museum of Forgotten Web</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&family=Orbitron:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="boot">
+      <pre id="bl"></pre>
+      <div id="lg">
+        <b>MBGRTUS UI</b><button class="btn" id="go" hidden>▶ ENTER MUSEUM</button
+        ><small id="hint" hidden>🔊 sound is part of the exhibit — set a reasonable volume</small>
+      </div>
+    </div>
+    <header>
+      <a class="logo" href="#lobby">◼ DMFW.EXE</a>
+      <nav>
+        <a class="btn" data-h="lobby" href="#lobby">Lobby</a
+        ><a class="btn" data-h="skeuo" href="#skeuo">Skeuomorph</a
+        ><a class="btn" data-h="flash" href="#flash">Flash</a
+        ><a class="btn" data-h="gifs" href="#gifs">GIF Archive</a
+        ><a class="btn" data-h="sounds" href="#sounds">Sounds</a
+        ><a class="btn" data-h="terminal" href="#terminal">Terminal</a
+        ><a class="btn" data-h="arcade" href="#arcade">Arcade</a
+        ><a class="btn" data-h="guest" href="#guest">Guestbook</a
+        ><a class="btn" data-h="desk" href="#desk">Desktop 98</a>
+      </nav>
+      <span class="tg"
+        ><button class="btn" id="crt2">CRT: OFF</button><button class="btn" id="snd">SND: ON</button
+        ><button class="btn" id="skin">SKIN: NEON</button></span
+      >
+    </header>
+    <div class="tick">
+      <span
+        >★ Welcome to the Digital Museum of Forgotten Web ★ Admission: free ★ Please sign the
+        guestbook ★ Best viewed in Netscape Navigator 4.0 at 800×600 ★ Now with 256 colors ★</span
+      >
+    </div>
+    <main>
+      <section class="hall on" id="lobby">
+        <h1>DIGITAL MUSEUM<br />OF FORGOTTEN WEB</h1>
+        <p style="max-width: 680px; font-size: 26px">
+          An interactive archive of the early internet: glossy buttons you could almost lick, Flash
+          intros nobody could skip, GIFs from the 90s and the system sounds that scored our
+          childhoods.
+        </p>
+        <div class="doors" style="margin: 26px 0">
+          <a class="door" href="#skeuo"
+            ><b>HALL 01 · 2001–2012</b>
+            <h2>Skeuomorphism</h2>
+            Leather, glass, knobs and stitched paper. Touch it, then flatten it. <em>ENTER →</em></a
+          >
+          <a class="door" href="#flash"
+            ><b>HALL 02 · 1996–2010</b>
+            <h2>The Flash Era</h2>
+            A preloader stuck on 99%, and the legendary “Skip Intro”. <em>ENTER →</em></a
+          >
+          <a class="door" href="#gifs"
+            ><b>HALL 03 · 1995–2002</b>
+            <h2>GIF Archive</h2>
+            Under-construction signs, spinning globes and hit counters. <em>ENTER →</em></a
+          >
+          <a class="door" href="#sounds"
+            ><b>HALL 04 · 1990–2010</b>
+            <h2>Sound Hall</h2>
+            Boot chimes, error dings and a dial-up handshake, rebuilt live. <em>ENTER →</em></a
+          >
+          <a class="door" href="#terminal"
+            ><b>HALL 05 · 1984–2026</b>
+            <h2>Terminal</h2>
+            Drive the museum from a command line. <em>ENTER →</em></a
+          >
+          <a class="door" href="#arcade"
+            ><b>HALL 06 · 1976–2000</b>
+            <h2>Arcade</h2>
+            Snake, and the DVD logo that almost hits the corner. <em>ENTER →</em></a
+          >
+          <a class="door" href="#guest"
+            ><b>HALL 07 · 1997–2004</b>
+            <h2>Guestbook</h2>
+            Leave your mark. It stays in your browser. <em>ENTER →</em></a
+          >
+          <a class="door" href="#desk"
+            ><b>HALL 08 · 1998–2001</b>
+            <h2>Desktop 98</h2>
+            A working desktop: windows, Start menu, taskbar. <em>ENTER →</em></a
+          >
+        </div>
+        <div class="win">
+          <div class="tb"><span>CURATOR_NOTE.TXT</span><span>_ ▢ ✕</span></div>
+          <div class="wb">
+            The web used to be weird, personal and slightly broken. Every page was somebody’s room.
+            We keep these rooms here, so they are not forgotten. Switch the <b>SKIN</b> in the
+            corner to see the museum in neon or monochrome.
+          </div>
+        </div>
+      </section>
+
+      <section class="hall" id="skeuo">
+        <h1>SKEUOMORPHISM</h1>
+        <div class="win sk" id="sk">
+          <div class="tb"><span>TOUCHABLE_UI.APP</span><span>_ ▢ ✕</span></div>
+          <div class="wb">
+            <div class="row">
+              <div>
+                <button class="aqua" id="aq">Click me</button>
+                <div class="lab">Aqua button, 2001</div>
+              </div>
+              <div>
+                <div class="knob" id="knob" style="transform: rotate(27deg)"></div>
+                <div class="lab">Volume knob · <span id="kv">60</span>% (drag it)</div>
+              </div>
+              <div>
+                <div class="sw on" id="sw"></div>
+                <div class="lab">Sound switch</div>
+              </div>
+              <div style="width: min(260px, 100%)">
+                <div class="lea">Notes</div>
+                <div class="pad" contenteditable spellcheck="false">
+                  Dear diary, today I installed 14 toolbars. The internet is fast now!
+                </div>
+                <div class="lab">Editable notepad</div>
+              </div>
+            </div>
+            <p style="text-align: center; margin: 22px 0 0">
+              <button class="btn" id="flat">▶ FLATTEN TO iOS 7 (2013)</button>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="hall" id="flash">
+        <h1>THE FLASH ERA</h1>
+        <div class="win">
+          <div class="tb"><span>INTRO.SWF</span><span>_ ▢ ✕</span></div>
+          <div class="wb">
+            <div class="stage">
+              <canvas id="cv" width="640" height="360"></canvas
+              ><button class="btn" id="skip">SKIP INTRO »</button>
+            </div>
+            <p class="lab">
+              Move the mouse for sparkles. Click for fireworks.
+              <button class="btn" id="rep">↻ REPLAY</button>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="hall" id="gifs">
+        <h1>GIF ARCHIVE</h1>
+        <div class="cards" id="cards"></div>
+        <div id="info">Click an exhibit to read its label.</div>
+      </section>
+
+      <section class="hall" id="sounds">
+        <h1>SOUND HALL</h1>
+        <p>
+          Every sound is synthesized live in your browser, inspired by the originals. No samples, no
+          copyright trouble.
+        </p>
+        <div class="pads" id="pads"></div>
+        <canvas id="viz" width="900" height="120"></canvas>
+      </section>
+      <section class="hall" id="terminal">
+        <h1>TERMINAL</h1>
+        <div class="term" id="to">
+          <p>MBGRTUS shell v1.0. Type <span>help</span> to begin.</p>
+          <div>
+            <span>visitor@mbgrtus:~$</span>
+            <input id="ti" autocomplete="off" autocapitalize="off" spellcheck="false" />
+          </div>
+        </div>
+      </section>
+      <section class="hall" id="arcade">
+        <h1>ARCADE</h1>
+        <div class="row" style="align-items: flex-start">
+          <div>
+            <canvas class="g" id="sn" width="360" height="360"></canvas>
+            <div class="lab">Snake · arrows or tap · score <span id="sco">0</span></div>
+          </div>
+          <div>
+            <canvas class="g" id="dv" width="360" height="240"></canvas>
+            <div class="lab">DVD screensaver · wait for the corner</div>
+          </div>
+        </div>
+      </section>
+      <section class="hall" id="guest">
+        <h1>GUESTBOOK</h1>
+        <div id="gf">
+          <input id="gn" maxlength="24" placeholder="name" /><input
+            id="gm"
+            maxlength="140"
+            placeholder="leave a message"
+          /><button class="btn" id="gs">SIGN</button>
+        </div>
+        <div id="gbl"></div>
+      </section>
+      <section class="hall" id="desk">
+        <h1>DESKTOP 98</h1>
+        <div class="dk" id="dk">
+          <div class="tbar">
+            <button class="sb" id="st">⊞ Start</button><span id="tk"></span><span id="clk"></span>
+          </div>
+          <div class="sm" id="sm"></div>
+        </div>
+        <p class="lab">Click icons to open windows. Drag title bars. Try the Start menu.</p>
+      </section>
+    </main>
+    <div id="crt"></div>
+    <div id="bsod">
+      :(<br /><br />A problem has been detected and your nostalgia has been shut down to prevent
+      damage to your childhood.<br /><br />*** STOP: 0x000000D1 (0xDEADBEEF, 0x00000002) ***<br /><br />Click
+      anywhere to restart.
+    </div>
+    <footer>
+      You are visitor #<span class="lcd" id="cnt" style="font-size: 28px">001337</span><br />©
+      1999–2026 Digital Museum of Forgotten Web · ← Web Ring · Random · Next →
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
